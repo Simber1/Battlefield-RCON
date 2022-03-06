@@ -1,0 +1,22 @@
+{
+  "name": "battlefield-rcon",
+  "version": "1.0.0",
+  "description": "A Battlefield RCON Tool wrote in Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Simber1/Battlefield-RCON.git"
+  },
+  "author": "Peter Stather",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Simber1/Battlefield-RCON/issues"
+  },
+  "homepage": "https://github.com/Simber1/Battlefield-RCON#readme",
+  "devDependencies": {
+    "electron": "^17.1.0"
+  }
+}
