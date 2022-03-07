@@ -1,0 +1,32 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script>
+    webSocket = new WebSocket("ws://localhost:8880");
+    webSocket.onmessage = function(message){
+      console.log(message.data);
+    }
+    </script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js,
+    Chromium maybe,
+    and not Electron.
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
