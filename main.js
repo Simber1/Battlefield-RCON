@@ -10,7 +10,3 @@ wss.on('connection', function connection(gamews) {
         gamews.send("Hello!")
 	});
 });
-
-function test(content){
-    console.log(content);
-}
